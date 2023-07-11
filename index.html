@@ -21,7 +21,7 @@
   <!-- main -->
   <main>
     <!-- Sezione button -->
-    <div class="container">
+    <div class="container primary">
       <span id="add-task">Add Task</span>
       <span id="add-section">Add Section</span>
     </div>
@@ -29,14 +29,16 @@
 
     <!-- Sezione lista -->
 
-    <div class="container">
-      <ul>
+    <div class="container secondary">
+      <ul class="primary-list">
 
         <li>
 
           <span>&#9660;New Task</span>
-          <ul>
-            <li><span class="check">&checkmark;</span>Quarterly Newsletter</li>
+          <ul class="secondary-list">
+            <li>
+              <p><span class="green">&checkmark;</span>Quarterly Newsletter</p><span class="notifier"></span>
+            </li>
           </ul>
 
         </li>
@@ -44,12 +46,23 @@
         <li>
 
           <span>&#9660;Today</span>
-          <ul>
+          <ul class="secondary-list">
 
-            <li><span class="check">&checkmark;</span>Recruiting blog post</li>
-            <li><span class="check">&checkmark;</span>Mobile app launch</li>
-            <li><span class="cross">&cross;</span>Interview John H.</li>
-            <li><span class="check">&checkmark;</span>Summit update to mobile storefronts</li>
+            <li>
+              <p><span class="green">&checkmark;</span>Recruiting blog post</p>
+            </li>
+
+            <li>
+              <p><span class="green">&checkmark;</span>Mobile app launch</p>
+            </li>
+
+            <li>
+              <p><span class="red">&cross;</span>Interview John H.</p>
+            </li>
+
+            <li>
+              <p><span class="green">&checkmark;</span>Summit update to mobile storefronts</p>
+            </li>
 
           </ul>
 
@@ -58,12 +71,12 @@
         <li>
 
           <span>&#9660;Upcoming</span>
-          <ul>
+          <ul class="secondary-list">
 
-            <li><span class="cross">&cross;</span>Schedule meeting with Alex</li>
-            <li><span class="check">&checkmark;</span>Hompage refresh</li>
-            <li><span class="check">&checkmark;</span>Onboard new Sales team members</li>
-            <li><span class="check">&checkmark;</span>Review editorial calendar</li>
+            <li><span class="red">&cross;</span>Schedule meeting with Alex</li>
+            <li><span class="green">&checkmark;</span>Hompage refresh</li>
+            <li><span class="green">&checkmark;</span>Onboard new Sales team members</li>
+            <li><span class="green">&checkmark;</span>Review editorial calendar</li>
 
           </ul>
 
