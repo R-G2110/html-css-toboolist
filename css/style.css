@@ -92,66 +92,51 @@ main .primary-list span{
   font-size: 15px;
 }
 
-main .secondary-list .editorial{
+main .secondary-list .notify{
   font-size: 10px;
   padding: 4px;
+  color: white;
+  border-radius: 8px;
+
+}
+
+.secondary-list .editorial{
   background-color: #47adf1;
-  color: white;
-  border-radius: 8px;
 }
 
-main .secondary-list .q1-goals{
-  font-size: 10px;
-  padding: 4px;
+.secondary-list .q1-goals{
   background-color: #9c72e4;
-  color: white;
-  border-radius: 8px;
 }
 
-main .secondary-list .recruting{
-  font-size: 10px;
-  padding: 4px;
+.secondary-list .recruting{
   background-color: #64c0a9;
-  color: white;
-  border-radius: 8px;
 }
 
-main .secondary-list .mobile{
-  font-size: 10px;
-  padding: 4px;
+.secondary-list .mobile{
   background-color: #f29e33;
-  color: white;
-  border-radius: 8px;
 }
 
-main .secondary-list .website{
-  font-size: 10px;
-  padding: 4px;
+.secondary-list .website{
   background-color: #d863a1;
-  color: white;
-  border-radius: 8px;
 }
-main .secondary-list .sales{
-  font-size: 10px;
-  padding: 4px;
+
+.secondary-list .sales{
   background-color: #aec721;
-  color: white;
-  border-radius: 8px;
+}
+
+.secondary-list .list{
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 10px;
+  font-weight: 900;
 }
 
 main span.check{
   border: 1px solid #94d7c9;
-  border-radius: 50%;
-  padding: 2px;
-  font-size: 10px;
   color: #94d7c9;
-  font-weight: 900;
+  
 }
 main span.cross{
   border: 1px solid #ec736e;
-  border-radius: 50%;
-  padding: 2px;
-  font-size: 10px;
   color: #ec736e;
-  font-weight: 900;
 }
