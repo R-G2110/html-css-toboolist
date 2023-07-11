@@ -60,3 +60,19 @@ main ul{
 main li{
   padding-left: 30px;
 }
+
+.check{
+  font-size: 8px;
+  color: green;
+  padding: 2px;
+  border: 1px solid green;
+  border-radius: 100%;
+}
+
+.cross{
+  font-size: 8px;
+  color: red;
+  padding: 2px;
+  border: 1px solid red;
+  border-radius: 100%;
+}
