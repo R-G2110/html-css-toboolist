@@ -84,9 +84,10 @@ main .secondary-list{
   font-size: 20px;
 }
 
-.primary-list span::after{
+.primary-list, .secondary-list span::after{
   content: " ";
 }
+
 
 main .primary-list span{
   font-size: 15px;
