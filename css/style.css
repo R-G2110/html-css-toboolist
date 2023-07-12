@@ -98,7 +98,7 @@ main .secondary-list .notify{
   padding: 4px;
   color: white;
   border-radius: 8px;
-
+  cursor: pointer;
 }
 
 .secondary-list .editorial{
@@ -127,10 +127,15 @@ main .secondary-list .notify{
 
 .secondary-list .list{
   border-radius: 50%;
+  width: 15px;
+  height: 15px;
   padding: 2px;
   font-size: 10px;
   font-weight: 900;
+  display: inline-block;
+  text-align: center;
 }
+
 
 main span.check{
   border: 1px solid #94d7c9;
@@ -142,6 +147,7 @@ main span.cross{
   color: #ec736e;
 }
 
-#add-task:hover, #add-section:hover, .notify:hover{
+#add-task:hover, #add-section:hover{
   background-color: orangered;
+  cursor: pointer;
 }
