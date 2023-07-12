@@ -1,3 +1,4 @@
+/* Reset */
 *{
   margin: 0;
   padding: 0;
@@ -6,14 +7,9 @@
 
 /* Header */
 
-header{
-  width: 100%;
-  height: 100px;
-}
-
 header .container{
-  padding-top: 20px;
-  padding-left: 20px;
+  height: 100px;
+  padding: 20px;
 }
 
 header .container img{
@@ -26,6 +22,7 @@ header span{
   vertical-align: middle; 
 }
 
+
 /* Main */
 
 main{
@@ -35,65 +32,85 @@ main{
   background-color: #f6f8f9;
 }
 
-main .container{
-  padding: 15px;
-  padding-left: 50px;
+.container.primary, .container.secondary{
+  font-size: 30px;
+  font-weight: 900;
+  padding: 20px 40px;
   width: 80%;
   margin-left: 100px;
   margin-bottom: 1px;
   background-color: white;
 }
 
+/* Container Bottoni */
+
 .container.primary{
   border-radius: 5px  5px 0 0;
 }
 
-main .container #add-task, main .container #add-section{
+#add-task, #add-section{
   padding: 7px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 #add-task{
   background-color: #47adf1;
+  border: 1px solid #47adf1;
   color: white;
+}
+
+#add-task:hover{
+  background-color: #0564a3;
+}
+
+#add-section:hover{
+  background-color: rgb(230, 227, 227);
 }
 
 #add-section{
   color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-main ul{
+
+
+/*Container lista annidata*/
+
+.primary-list li{
   list-style: none;
-  padding-left: 15px;
-  padding-bottom: 10px;
-}
-
-main li{
-  padding-bottom: 10px;
-}
-
-main .primary-list{
+  padding-bottom: 20px;
   color: #51555d;
-  font-size: 30px;
-  font-weight: 600;
 }
 
-main .secondary-list{
+.secondary-list li{
   font-size: 20px;
+  padding-top: 20px;
 }
 
-.primary-list, .secondary-list span::after{
-  content: " ";
+.list::before{
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
 }
 
-
-main .primary-list span{
-  font-size: 15px;
+.list.check::before{
+  content: '\2713';
+  color: green;
+  border-color: green;
+}
+.list.cross::before{
+  content: '\2715';
+  color:red;
+  border-color: red;
 }
 
-main .secondary-list .notify{
+.secondary-list .notify{
   font-size: 10px;
   padding: 4px;
   color: white;
@@ -123,31 +140,4 @@ main .secondary-list .notify{
 
 .secondary-list .sales{
   background-color: #aec721;
-}
-
-.secondary-list .list{
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  padding: 2px;
-  font-size: 10px;
-  font-weight: 900;
-  display: inline-block;
-  text-align: center;
-}
-
-
-main span.check{
-  border: 1px solid #94d7c9;
-  color: #94d7c9;
-  
-}
-main span.cross{
-  border: 1px solid #ec736e;
-  color: #ec736e;
-}
-
-#add-task:hover, #add-section:hover{
-  background-color: orangered;
-  cursor: pointer;
 }
