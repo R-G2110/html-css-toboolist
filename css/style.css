@@ -141,3 +141,7 @@ main span.cross{
   border: 1px solid #ec736e;
   color: #ec736e;
 }
+
+#add-task:hover, #add-section:hover, .notify:hover{
+  background-color: orangered;
+}
